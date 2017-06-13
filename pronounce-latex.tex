@@ -1,0 +1,35 @@
+\documentclass[varwidth,preview,border=0.5cm]{standalone}
+\usepackage{makecell} % thead
+\usepackage{graphicx} % includegraphics
+
+\title{How do you pronounce \LaTeX ?}
+\author{}
+\date{}
+
+\begin{document}
+
+    \maketitle
+    \vspace{-1cm}
+
+    \centering
+
+    \newcommand{\pronounce}[2]{
+        \thead{
+            #1 \\[0.5cm]
+            \includegraphics[width=.15\linewidth]{#2}
+            \vspace{0.5cm}
+        }
+    }
+
+    \begin{tabular}{ccc}
+
+        \pronounce{LAY-TECK}{like} &
+        \pronounce{LAY-TECHHH (phlegm)}{wow} &
+        \pronounce{LAY-TECKS}{angry} \\
+        \pronounce{LAH-TECK}{love} &
+        \pronounce{LAH-TECHHH (phlegm)}{haha} &
+        \pronounce{LAH-TECKS}{sad}
+
+    \end{tabular}
+
+\end{document}
