@@ -3,7 +3,8 @@
 mklatex () {
     dir=${1%/*}
     tex=${1##*/}
-    out=${tex%.*}.png
+    ext=$(grep -P -o "(?<=outext=)[^,}]*" "$1" || echo .png)
+    out=${tex%.*}$ext
     pushd "$dir"
     update=0
     for file in *.*
