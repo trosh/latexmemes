@@ -1,1 +1,6 @@
 *.sw?
+*.log
+*.aux
+*.dvi
+*.pdf
+*.ps
