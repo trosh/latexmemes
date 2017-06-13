@@ -1,0 +1,34 @@
+\documentclass[12pt,varwidth=9cm,preview,border=0.3cm,convert]{standalone}
+\usepackage{xcolor}
+\usepackage{listings}
+\lstset{
+    language=[LaTeX]TeX,
+    breaklines=true,
+    basicstyle=\tt\scriptsize,
+    keywordstyle=\color[rgb]{0.8,0,0},
+    commentstyle=\color[rgb]{0.6,0.63,0.66},
+}
+
+\begin{document}
+
+    Me: ``\LaTeX\ transforms tedious formatting tasks
+    from a menial game of trial-and-error into an intellectual art form,
+    outsmarting the problem by equipping the correct choice
+    of powerful yet elegant commands that precisely achieve
+    the desired outcome.''
+
+    Also me:
+
+    \begin{lstlisting}
+%\vspace{100pt} %pushed stuff to the next page
+%\vspace{20pt} %randomly double-line spacing
+%\vspace{60pt} %page broke again
+%\vspace{40pt} %figures aren't where I want them
+%\vspace{30pt} %figures still messed up
+%\vspace{25pt} %double line spacing again
+%\vspace{28pt} %FIGS ARE FUCKED AGAIN
+%\vspace{27pt} %WHAT IS THIS BULLSHIT
+\vspace{26pt} %%%%BETTER FUCKING WORK
+    \end{lstlisting}
+
+\end{document}
