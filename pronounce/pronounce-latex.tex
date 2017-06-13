@@ -1,4 +1,4 @@
-\documentclass[varwidth,preview,border=0.5cm]{standalone}
+\documentclass[varwidth,preview,border={3cm 0.5cm 3cm 0cm}]{standalone}
 \usepackage{makecell} % thead
 \usepackage{graphicx} % includegraphics
 
@@ -17,7 +17,6 @@
         \thead{
             #1 \\[0.5cm]
             \includegraphics[width=.15\linewidth]{#2}
-            \vspace{0.5cm}
         }
     }
 
@@ -25,7 +24,7 @@
 
         \pronounce{LAY-TECK}{like} &
         \pronounce{LAY-TECHHH (phlegm)}{wow} &
-        \pronounce{LAY-TECKS}{angry} \\
+        \pronounce{LAY-TECKS}{angry} \vspace{0.5cm} \\
         \pronounce{LAH-TECK}{love} &
         \pronounce{LAH-TECHHH (phlegm)}{haha} &
         \pronounce{LAH-TECKS}{sad}
